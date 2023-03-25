@@ -1,0 +1,141 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #00246B; /*  light blue background */
+
+    color: #333;
+  }
+  
+  h1 {
+    font-family: 'Playfair Display', serif;
+    text-align: center; /* Center the h1 */
+    color: #00246B;
+  }
+  
+  /* Container */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #8AB6F9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 5%;
+  }
+  
+  /* Form */
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  form input[type="text"] {
+    width: 60%;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
+    background-color: #CADCFC; /* light blue background */
+    margin-right: 10px;
+  }
+  
+  form button {
+    padding: 10px 20px; /* Make the button smaller */
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
+    background-color: #002B5B; /* green button */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #219653; /* darker green on hover */
+  }
+  
+  /* List */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 15px;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  li span {
+    flex-grow: 1;
+  }
+  
+  li button {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 50px;
+    background-color: transparent; /* red delete button */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  li button:hover {
+    background-color: #c0392b; /* darker red on hover */
+  }
+
+  /* edit and delete button styling */
+  .edit-button {
+    margin-right: 10px; 
+  }
+  .edit-button:hover{
+    background-color:#00246B ;
+  }
+
+
+  /* Toast message */
+.toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    z-index: 9999;
+    background: linear-gradient(to right, #3498db, #8e44ad); /* Add gradient background */
+    animation: slideInRight 0.5s, slideOutRight 0.5s 2.5s; /* Add animation */
+  }
+  
+  /* Animation */
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideOutRight {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+
+  
+  
