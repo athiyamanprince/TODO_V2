@@ -95,12 +95,17 @@ function editTodo(index) {
     addButton.style.display = 'inline-block';
     saveButton.style.display = 'none';
 
+    // Remove the event listener from the save button
+    saveButton.removeEventListener('click', saveTodo);
+
     // Send a toast message
     showToast('To-do updated successfully.');
   }
 
   saveButton.addEventListener('click', saveTodo);
 }
+
+
 
 function deleteTodoConfirmation(index) {
   if (confirm('Are you sure you want to delete this to-do?')) {
@@ -151,3 +156,4 @@ addTodo();
 window.addEventListener('unload', () => {
 localStorage.setItem('todos', JSON.stringify(todos));
 });
+
