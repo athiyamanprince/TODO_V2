@@ -5,15 +5,14 @@
   
   body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #00246B; /*  light blue background */
+    background-color: #00246B; 
 
     color: #333;
   }
   
   h1 {
     font-family: 'Playfair Display', serif;
-    text-align: center; /* Center the h1 */
-    color: #00246B;
+    text-align: center;
   }
   
   /* Container */
@@ -40,23 +39,23 @@
     font-size: 16px;
     border: none;
     border-radius: 50px;
-    background-color: #CADCFC; /* light blue background */
+    background-color: #CADCFC;
     margin-right: 10px;
   }
   
   form button {
-    padding: 10px 20px; /* Make the button smaller */
+    padding: 10px 20px; 
     font-size: 16px;
     border: none;
     border-radius: 50px;
-    background-color: #002B5B; /* green button */
+    background-color: #002B5B; 
     color: #fff;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
   
   form button:hover {
-    background-color: #219653; /* darker green on hover */
+    background-color: #219653; 
   }
   
   /* List */
@@ -85,14 +84,14 @@
     font-size: 14px;
     border: none;
     border-radius: 50px;
-    background-color: transparent; /* red delete button */
+    background-color: transparent;
     color: #fff;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
   
   li button:hover {
-    background-color: #c0392b; /* darker red on hover */
+    background-color: #c0392b;
   }
 
   /* edit and delete button styling */
@@ -114,8 +113,8 @@
     color: #fff;
     font-size: 16px;
     z-index: 9999;
-    background: linear-gradient(to right, #3498db, #8e44ad); /* Add gradient background */
-    animation: slideInRight 0.5s, slideOutRight 0.5s 2.5s; /* Add animation */
+    background: linear-gradient(to right, #3498db, #8e44ad); 
+    animation: slideInRight 0.5s, slideOutRight 0.5s 2.5s;
   }
   
   /* Animation */
@@ -136,6 +135,3 @@
       transform: translateX(100%);
     }
   }
-
-  
-  
